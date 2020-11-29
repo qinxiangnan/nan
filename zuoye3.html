@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>3d</title>
+
+    <style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #zwjs{
+        width: 100%;
+        height: 30px;
+        font-size: 20px;
+        background-color: black;
+        color: blanchedalmond;
+        text-align:end;
+        list-style: none;
+    }
+    #wenben{
+
+             font-size: 25px;
+             color:  #1e90ff;
+
+
+    }
+    header{
+        width: 100%;
+        height: 600px;
+    }
+    
+        html{
+            width: 100%;
+            height: 100%;
+        }
+        .bigbox{
+            width: 10px;
+            height: 10px;
+            margin: 200px 400px;
+            position: relative;
+        }
+        .box{
+            width:500px;
+            height:300px;
+            margin: 0 auto;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg) rotateY(-80deg);
+            -webkit-animation: mystyle 30s infinite;
+            animation-timing-function: linear;
+        }
+        @-webkit-keyframes mystyle{
+            from{transform: rotateX(-180deg) rotateY(-180deg);}
+            to{transform: rotateX(180deg) rotateY(180deg);}
+        }
+        .box div{
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            opacity: 0.8;
+            transition: all .4s;
+        }
+        .bigpic{
+            width: 200px;
+            height: 200px;
+        }
+        .box .bigfront{
+            transform: rotateY(0deg) translateZ(100px);
+        }
+        .box .bigback{
+            transform: translateZ(-100px) rotateY(180deg);
+        }
+        .box .bigleft{
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .box .bigright{
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+        .box .bigtop{
+            transform: rotateX(90deg) translateZ(100px);
+        }
+        .box .bigbottom{
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+        .box span{
+            display: block;
+            position: absolute;
+            width: 140px;
+            height: 140px;
+            top: 25px;
+            left: 25px;
+        }
+        .box .smallpic{
+            width: 140px;
+            height: 140px;
+        }
+        .box .smallleft{
+            transform: rotateY(90deg) translateZ(70px);
+        }
+        .box .smallright{
+            transform: rotateY(-90deg) translateZ(70px);
+        }
+        .box .smalltop{
+            transform: rotateX(90deg) translateZ(70px);
+        }
+        .box .smallbottom{
+            transform: rotateX(-90deg) translateZ(70px);
+        }
+        .box .smallfront{
+            transform: rotateY(0deg) translateZ(70px);
+        }
+        .box .smallback{
+            transform: translateZ(-70px) rotateY(180deg);
+        }
+        /*:hover 我们之前说过的一个css选择器，能够让鼠标指向的时候触发*/
+        .box:hover .bigleft{
+            transform: rotateY(90deg) translateZ(300px);
+        }
+        .box:hover .bigright{
+            transform: rotateY(-90deg) translateZ(300px);
+        }
+        .box:hover .bigtop{
+            transform: rotateX(90deg) translateZ(300px);
+        }
+        .box:hover .bigbottom{
+            transform: rotateX(-90deg) translateZ(300px);
+        }
+        .box:hover .bigfront{
+            transform: rotateY(0deg) translateZ(300px);
+        }
+        .box:hover .bigback{
+            transform: translateZ(-300px) rotateY(180deg);
+        }
+      
+    </style>
+</head>
+<body>
+    <li id="zwjs"> 通信1903班 201916180308 秦湘楠   </li>
+    <div id="wenben">谢老师好！我是秦湘楠，一个活泼可爱，热爱学习的女孩子。<p></p>
+         没有特别的爱好 就喜欢跳舞 喜欢沙雕 还有点der！   <p></p>
+         下面是一个拔光一万根头发做出来的3D照片墙 鼠标悬浮有动态效果  希望谢老师喜欢 嘻嘻 
+        
+    
+    </div>
+
+
+
+    <header>
+<div class="bigbox">
+    <div class="box">
+        <div class="bigfront">
+            <img src="zp1.jpg" class="bigpic" >
+        </div>
+        <div class="bigback">
+            <img src="zp2.jpg" class="bigpic">
+        </div>
+        <div class="bigleft">
+            <img src="zp3.jpg" class="bigpic">
+        </div>
+        <div class="bigright">
+            <img src="zp4.jpg" class="bigpic">
+        </div>
+        <div class="bigtop">
+            <img src="zp6.jpg" class="bigpic">
+        </div>
+        <div class="bigbottom">
+            <img src="zp8.jpg" class="bigpic">
+        </div>
+        <span class="smallfront">
+          <img src="zp5.jpg" class="smallpic" />
+        </span>
+        <span class="smallback">
+          <img src="zp7.jpg" class="smallpic" />
+        </span>
+        <span class="smallleft">
+          <img src="zp9.jpg" class="smallpic" />
+        </span>
+        <span class="smallright">
+          <img src="zp10.jpg" class="smallpic" />
+        </span>
+        <span class="smalltop">
+          <img src="zp11.jpg" class="smallpic" />
+        </span>
+        <span class="smallbottom">
+          <img src="zp12.jpg" class="smallpic" />
+        </span>
+    </div>
+</div>
+</header>
+ <audio src="" controls autoplay></audio>
+</body>
+</html>
