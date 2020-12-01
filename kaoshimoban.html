@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考试模板</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #ziji {
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            background-color: #111;
+        }
+
+        #dreams {
+            position: absolute;
+            margin: 0;
+            padding: 0;
+        }
+
+        .con {
+            display: flex;
+            width: 100%;
+            padding: 4% 2%;
+            box-sizing: border-box;
+            height: 100vh;
+
+        }
+
+        .box {
+            flex: 1;
+            overflow: hidden;
+            transition: 5.5s;
+            margin: 0 2%;
+            box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+            line-height: 0;
+        }
+
+        .box>img {
+            width: 200%;
+            height: calc(100% - 10vh);
+            object-fit: cover;
+            transition: 5.5s;
+        }
+
+        .box>span {
+            font-size: 3vh;
+            display: block;
+            text-align: center;
+            height: 10vh;
+            line-height: 2.5;
+            font-family: tahoma;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .box:hover {
+            flex: 1 1 50%;
+        }
+
+        .box:hover>img {
+            width: 100px;
+            height: 100%;
+        }
+
+        header {
+            height: 600px;
+
+        }
+
+        #kaishi {
+            text-align: center;
+            font-size: 18px;
+            font-weight: 900;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            list-style: none;
+
+        }
+
+        section {
+            position: relative;
+            margin-top: 50px;
+            height: 1105px;
+        }
+
+        nav {
+            height: 300px;
+            width: 100%;
+            background-image: url(./fense3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        article {
+            height: 400px;
+            width: 50%;
+            float: left;
+            position: relative;
+        }
+
+        .part {
+            letter-spacing: 8px;
+            list-style: none;
+        }
+
+        aside {
+            position: relative;
+            /* height: 200px;
+             */
+
+            width: 100%;
+            font-size: 2em;
+            border: 2px solid white;
+            box-shadow: 2px 3px 3px #aaaaaa;
+        }
+
+        main {
+
+            height: 300px;
+            background-image: url(./fense3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #nana {
+            height: 400px;
+            width: 50%;
+            float: right;
+            position: relative;
+        }
+
+        #sezuo {
+            height: 400px;
+            width: 50%;
+            float: left;
+        }
+
+        #seyou {
+            height: 400px;
+            width: 50%;
+            float: right;
+        }
+
+        #rhddt {
+            position: relative;
+            margin-top: 100px;
+        }
+
+        #wzjs {
+            position: relative;
+            margin-top: 100px;
+        }
+
+        #www {
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif"
+
+        }
+
+        #lianjie {
+            height: 600px;
+            width: 100%;
+            margin: 0;
+  
+        }
+
+        #lianjiezuo {
+            height: 600px;
+            width: 33%;
+            position: relative;
+            border: 2px solid white;
+            height: 600px;
+            width: 33%;
+            box-shadow: 2px 3px 3px #aaaaaa;
+            /* background-color: blue; */
+        }
+
+        #lianjiezhong {
+            height: 600px;
+            width: 33%;
+            position: relative;
+            margin-top: -604px;
+            margin-left: 463px;
+            position: relative;
+            border: 2px solid white;
+            height: 600px;
+            width: 33%;
+            box-shadow: 2px 3px 3px #aaaaaa;
+
+        }
+
+        #lianjieyou {
+            height: 600px;
+            width: 33%;
+            /* background-color: yellow; */
+            float: right;
+            position: relative;
+            margin-top: -604px;
+            position: relative; 
+            border: 2px solid white;
+            height: 600px;
+            width: 33%;
+            box-shadow: 2px 3px 3px #aaaaaa;
+
+        }
+
+        footer {
+            height: 300px;
+            width: 100%;
+            background-image: url(./fense3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background-color: rgba(78, 78, 78, 0.411); */
+        }
+
+        #goodbye {
+
+            font-size: 4em;
+            position: relative;
+        }
+
+        span {
+            position: relative;
+            margin-top: 20px;
+        }
+        .bbb{
+    position: relative;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.bbb .bobo{
+    position: relative;
+    width: 415px;
+    height: 400px;
+    margin: 20px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.bbb .bobo .imgBx{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #000;
+clip-path: circle(400px at center 100px);
+transition: 0.5s;
+}
+.bbb .bobo:hover .imgBx{
+    clip-path: circle(80px at center 100px);   
+}
+.bbb .bobo:hover .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    text-align: center;
+
+
+}
+.bbb .bobo .ccc{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+     width: 100%; 
+    height: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.bbb .bobo .ccc h2{
+    margin: 0;
+    padding: 0;
+
+}
+.bbb .bobo .ccc  a{
+    text-decoration: none;
+    background: #000;
+    color:#fff;
+    padding: 5px;
+    display: inline-block;
+
+}
+.bbb .bobo .ccc h2,
+.bbb .bobo .ccc  p,
+.bbb .bobo .ccc  a
+{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+
+}
+.bbb .bobo:hover .ccc h2
+{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.5s;
+
+}
+.bbb .bobo:hover .ccc  p{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+}
+.bbb .bobo:hover .ccc  a{
+    opacity: 1;
+    transform:translateY(0px);
+    transition-delay: 0.9s;   
+}
+
+
+
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="xiangnan.css">
+    <link rel="stylesheet" href="fgzt.css">
+</head>
+
+<body>
+
+    <div id="ziji">通信1903班 韦艳春 201916180307     通信1903班 秦湘楠 201916180308  通信1903班 李鑫月 201916180309
+        <p></p>老师好！我是秦湘楠，一个活泼可爱 积极进取 热爱学习的女孩子。
+    
+    </div>
+
+    <header>
+
+
+        <div>
+            <ul>
+                <div class="faguang">
+                    <span>介</span>
+                    <span>绍</span>
+                    <span>我</span>
+                    <span>最</span>
+                    <span>喜</span>
+                    <span>欢</span>
+                    <span>的</span>
+                    <span>美</span>
+                    <span>食</span>
+                </div>
+                <div class="con">
+                    <div class="box">
+                        <img src="choudoufu3.jpg" alt="">
+                        <span>长沙臭豆腐</span>
+                    </div>
+                    <div class="box">
+                        <img src="mimi.jpg" alt="">
+                        <span>咪咪</span>
+                    </div>
+                    <div class="box">
+                        <img src="roujiamo1.jpg" alt="">
+                        <span>陕西肉夹馍</span>
+                    </div>
+                    <div class="box">
+                        <img src="zhishib.jpg" alt="">
+                        <span>威化饼干</span>
+                    </div>
+
+
+            </ul>
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="container">
+                <p id="wzjs">详细介绍</p>
+            </div>
+        </nav>
+
+        <aside>
+            <div id="nana">
+                <div class="part">这款零食是我最喜欢的小零食啦！选用肥美海虾与面粉的美味结合，用盐烤出来的鲜虾条 鲜，脆，香，酥而不油腻，男女老少都喜欢！</div>
+            <a href="https://uland.taobao.com/coupon/edetail?spm=a2e1u.19484427.29996460.1.79981cabwIHFbA&e=6aNU9Cx9VgMNfLV8niU3R40dlhWtfp96Ng4Gqf8CT4BnmB%2Fzds2ljes%2BXDBl2QSAtGOg%2BGC9pSzw1oHTOj1iB8lTB9%2Bh1OAY4JhgCqFbzYC3LQWEZjXUEEw9Oli3oAHgvcrGTiJVeguvRnxCC4AzOt8SnUXMxdA06wjscJZawqxDIQ%2FNKkk6pf47SzsQhGnV2yyKL%2FuyTAI%3D&app_pvid=59590_33.5.224.204_598_1606092378772&ptl=floorId%3A34371%3Bapp_pvid%3A59590_33.5.224.204_598_1606092378772%3Btpp_pvid%3A100_11.30.124.208_58068_681606092378778866&union_lens=lensId%3AOPT%401606092378%402105e0cc_6029_175f290d369_4370%4001%3Brecoveryid%3A201_11.8.100.95_7039114_1606092372285%3Bprepvid%3A201_11.142.52.189_7234417_1606092378317&pid=mm_124190590_30248727_109212350230">点击即可获得美味</a>
+            </div>
+            <article>
+                <div> <img src="mimi1.jpg" alt=""> </div>
+            </article>
+        </aside>
+        <aside>
+            <div id=sezuo class="part">
+                这款零食原产地于印度尼西亚，一层夹心一层芝士，香浓美味的芝士香味，加上饼干的酥脆，让你口水直流回味无穷。多种口味任你选择，芝士喜欢芝士的朋友一定不要错过哦！芝士就是力量！
+ <p></p>            <a href="https://uland.taobao.com/coupon/edetail?spm=a2e1u.19484427.29996460.12.2dbb1cabLseRvB&e=WFIothJCkAoNfLV8niU3R40dlhWtfp96Ng4Gqf8CT4BnmB%2Fzds2ljTie%2B484dCyLzGzl0AgZiPTw1oHTOj1iB8lTB9%2Bh1OAY4JhgCqFbzYC3LQWEZjXUEEw9Oli3oAHgNyqvYakkIFD%2FMwoGiLqxxqmAWqoJ1Lx74q%2FQR3wyd9xDIQ%2FNKkk6pf47SzsQhGnV2yyKL%2FuyTAI%3D&app_pvid=59590_11.93.192.103_591_1606093015579&ptl=floorId%3A34371%3Bapp_pvid%3A59590_11.93.192.103_591_1606093015579%3Btpp_pvid%3A100_11.30.126.154_56769_4021606093015587071&union_lens=lensId%3AOPT%401606093015%400b5dc067_43e4_175f29a8ad9_db32%4001%3Brecoveryid%3A201_11.8.100.95_7039114_1606092372285%3Bprepvid%3A201_11.132.110.148_7243808_1606093015071&pid=mm_124190590_30248727_109212350230">点击即可获得美味</a>
+            </div>
+            <div id=seyou>
+                <img src="zhishib.jpg" alt="">
+            </div>
+        </aside>
+    </section>
+    <main>
+        <div class="container">
+            <p id="rhddt">地方特色小吃</p>
+        </div>
+    </main>
+    <div id="lianjie">
+
+        <div id="lianjiezuo">
+         <div class="bbb">
+            <div class="bobo">
+                <div class="imgBx">
+                    <img src="choudoufu4.jpg" alt="">
+                </div>
+                <div class="ccc">
+                    <h2>长沙臭豆腐</h2>
+                    <p>外酥里嫩 咸香辣具备 有机会来长沙一定不要错过！ 没有时间的朋友也不要灰心，真空包装的臭豆腐也是不错的选择，口味一点也不输现做的！</p>
+                    <a href="https://item.taobao.com/item.htm?id=525151644086&ali_trackid=2:mm_124190590_30248727_109212350230:1606093733_204_1036579430&union_lens=lensId:OPT@1606093724@21088ac7_06fc_175f2a55b89_4f8c@01;recoveryid:201_11.8.100.95_7039114_1606092372285;prepvid:201_11.142.52.189_7241092_1606093723861&spm=a2e1u.19484427.29996460.12&pvid=100_11.179.219.206_63591_8551606093724368622&scm=null&bxsign=tbkbcjzLzqqA/czm45jfsVe12w55i4Z6VP4v/JGxwvDrtfwEJSqnYB/XvkB520yOWFZ0PKAzkpV9LpSntIWnyLFpXOadENMhQ4mVtitb+HRtKo=">点击购买</a>
+                </div>
+            </div>
+        </div>
+        </div>
+
+         <div id="lianjiezhong">
+        <div class="bbb">
+            <div class="bobo">
+                <div class="imgBx">
+                    <img src="cyys1.jpg" alt="">
+                </div>
+                <div class="ccc">
+                    <h2>茶颜悦色</h2>
+                    <p>来长沙不喝茶颜悦色就等于白来啦！茶叶和奶油的完美融合，嘬一口奶油简直不要太满足！必点的就是幽兰拿铁，其他的随便点也不会踩雷。</p>
+                    <a href="https://bdkd.8.tojhwh.com/YZWCY21-B/eX7iUWQTyuv90Hqh3ANNNw/?utm_account=baidu-hfla%E9%80%9A%E4%BF%8A%E8%BE%8979B20HY05115&utm_campaign=CXKE_%5BHG%5D%28%E5%A5%B6%E8%8C%B6%29%3CCYYS%3EX&semx=CXKE&sempagenum=1&semuserid=31375847&semplanid=139190641&semunitid=5246790770&semk=206329031653&semc=44151931396&semm=1&semp=cl3&sema=bj&semd=pc&utm_term=%B2%E8%D1%D5%D4%C3%C9%AB&sembidurl={bidurl}&bd_vid=8196151560016144955">read more</a>
+                    
+                </div>
+            </div>
+            </div> 
+            </div>
+            <div id="lianjieyou">
+            <div class="bbb">
+                <div class="bobo">
+                    <div class="imgBx">
+                        <img src="ypm1.jpg" alt="">
+                    </div>
+                    <div class="ccc">
+                        <h2>陕西油泼面</h2>
+                        <p>好吃到舔碗的油泼面，酸辣爽口，好吃到停不下来。</p>
+                        <a href="https://jingyan.baidu.com/article/c843ea0b62714c36921e4a5f.html">正宗油泼面做法</a>
+                    </div>
+                </div>
+                 </div>
+
+            </div>
+
+        </div>
+        <footer>
+
+            <div class="faguang" id="goodbye">
+                <span>g</span>
+                <span>o</span>
+                <span>o</span>
+                <span>d</span>
+                <span>b</span>
+                <span>y</span>
+                <span>e</span>
+            </div>
+            <!-- <audio controls="" id="dreams">
+            <source src="Joakim Karud - Dreams.mp3" type="audio/mpeg">
+        </audio> -->
+        </footer>
+
+
+</body>
+
+</html>
